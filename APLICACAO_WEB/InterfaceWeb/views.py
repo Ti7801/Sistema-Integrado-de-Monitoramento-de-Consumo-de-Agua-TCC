@@ -285,14 +285,14 @@ def cep_numero(request):
 
 def execution():
     while True:
-        dia_atual = 30#date.today()
-        ultimo_dia = 30#dia_atual.replace(monthrange(dia_atual.year, dia_atual.month)[1])
-        #hora = datetime.now().hour
-        #minuto = datetime.now().minute
-        #segundos = datetime.now().second
-        if dia_atual == ultimo_dia: #and hora == 0 and minuto == 0 and segundos == 0:
+        dia_atual = date.today()
+        ultimo_dia = dia_atual.replace(monthrange(dia_atual.year, dia_atual.month)[1])
+        hora = datetime.now().hour
+        minuto = datetime.now().minute
+        segundos = datetime.now().second
+        if dia_atual == ultimo_dia and hora == 0 and minuto == 0 and segundos == 0:
             Dados_Fatura()
-        sleep(10)#86.400 = 3600 * 24
+        sleep(86.400)#86.400 = 3600 * 24
 
 #Criação de fatura executando em segundo plano
 threading.Thread(target=execution).start()
