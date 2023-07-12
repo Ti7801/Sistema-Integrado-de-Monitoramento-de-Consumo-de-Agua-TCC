@@ -17,8 +17,8 @@ unsigned long  CONTADOR_PULSOS = 0;
 uint64_t CONTADOR_LITROS = 0;
 uint64_t  QUANTIDADE_LITROS_ANTIGA; //Inicializada com lixo
 uint64_t  VALOR_MAXIMO_LITROS = 18446744073709551600;
-const char* WIFI_SSID  = "DaltroNetWireless"; //Rede 
-const char* WIFI_PASSWORD  = "TIGDTPLINK05"; //Senha do wifi 
+const char* WIFI_SSID  = "COLOQUE_A_REDE"; //Rede 
+const char* WIFI_PASSWORD  = "COLOQUE_A_SENHA_DA_REDE"; //Senha do wifi 
 const char* CAMINHO = "Enderecos/58088140-191/Litros";
 
 bool signupOK = false;
